@@ -1,0 +1,54 @@
+/*Оформление элементов*/
+
+input[type="checkbox"] {
+	display: none;
+}
+
+label {
+	text-decoration: underline;
+	padding: 2px 15px;
+}
+
+label[for="red"] {
+	color: red;
+}
+
+label[for="green"] {
+	color: green;
+}
+
+label[for="blue"] {
+	color: blue;
+}
+
+span {
+	color: white;
+	padding: 2px 4px;
+	border-radius: 5px;
+}
+
+span.red {
+	background-color: red;
+}
+
+span.green {
+	background-color: green;
+}
+
+span.blue {
+	background-color: blue;
+}
+
+/*Функционал*/
+
+#red:checked ~ label[for="red"],
+#green:checked ~ label[for="green"],
+#blue:checked ~ label[for="blue"] {
+	opacity: 0.2;
+}
+
+#red:checked ~ span.red,
+#green:checked ~ span.green,
+#blue:checked ~ span.blue {
+	display: none;
+}

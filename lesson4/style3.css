@@ -17,6 +17,11 @@ ul, li {
 
 .pager li {
     display: inline-block;
+    
+}
+
+.pager li a{
+    display: block;
     border: 1px solid #dedede;
     margin: 0 2px;
     padding: 7px 10px; 
@@ -29,19 +34,17 @@ li a {
     color: #A13BCF;
 }
 
-li.active {
+li.active a,
+li:hover a{
     background-color: #A13BCF;
-    border-color: #7C12BC;  
+    border-color: #7C12BC;
+    color: white;  
 }
 
-li.active a {
-    color: white;
-}
-
-li.first-page,
-li.prev-page,
-li.next-page,
-li.last-page,
+li.first-page a,
+li.prev-page a,
+li.next-page a,
+li.last-page a,
 li.divider
 {
     border: none;

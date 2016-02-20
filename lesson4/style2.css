@@ -42,12 +42,12 @@ li a {
     text-decoration: none;
 }
 
-li.active {
+li:hover {
     background-color: #eee;
+    color: #9f9fa0;
 }
 
-li.active a,
-li a:hover {
+li:hover a {
     color: #9f9fa0;
 }
 

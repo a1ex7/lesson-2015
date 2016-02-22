@@ -10,10 +10,11 @@ ul, li {
 }
 
 .pricing {
-	width: 295px;
+	width: 300px;
 	border: 4px solid #ee8129;
 	border-radius: 5px;
 	text-align: center;
+	box-shadow: 0 0 5px 5px gray;
 }
 
 .pricing-header {
@@ -39,10 +40,14 @@ ul, li {
 .price {
 	color: #35495a;
 	margin-bottom: 25px;
+	position: relative;
 }
 
 .price-currency {
 	font-size: 24px;
+	position: absolute;
+	margin-left: -10px;
+	margin-top: 10px;
 }
 
 .price-value {
@@ -63,6 +68,14 @@ ul, li {
 	padding: 10px 10px 10px 60px;
 	color: #888c94;
 	margin-bottom: 1px;
+	position: relative;
+}
+
+.features-item:before {
+	content: "v";
+	display: block;
+	position: absolute;
+	margin-left: -20px;	
 }
 
 .features-item:nth-child(even) {

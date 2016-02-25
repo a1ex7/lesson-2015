@@ -12,9 +12,9 @@ body {
 }
 
 .wrapper {
-    width: 1060px;
+    width: 970px;
     margin: 0 auto;
-    padding: 45px;
+    padding: 50px 45px;
     background-color: #fff;
     box-shadow: 0 0 5px gray;
 }
@@ -23,7 +23,7 @@ body {
 /*HEADER*/
 
 .logo {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
 }
 
 .top-menu {
@@ -35,7 +35,7 @@ body {
 }
 
 .top-menu li a {
-    padding: 15px 25px;
+    padding: 10px 35px;
     display: block;
     color: #fff;
     text-decoration: none;
@@ -63,7 +63,7 @@ main {
 
 .left-menu li a {
     margin-bottom: -1px;
-    padding: 15px 25px;
+    padding: 10px 23px;
     display: block;
     color: #656363;
     text-decoration: none;
@@ -74,13 +74,14 @@ main {
     padding-left: 35px;
     color: #2c2c2c;
     background-color: #f9f9f9;
-    font-weight: bold;
 }
 
 /*MAIN CONTENT*/
 
 .main-content {
-    margin-left: calc(25% + 45px);
+    float: left;
+    width: calc(75% - 45px);
+    margin-left: 45px;
 }
 
 .product-foto {
@@ -93,7 +94,8 @@ main {
 }
 
 .description {
-    padding: 40px 25px 20px 25px;
+    padding: 35px 25px 20px 25px;
+    line-height: 1.5;
 }
 
 
@@ -109,7 +111,7 @@ main {
 
 .footer-menu li a,
 .footer-menu li span {
-    padding: 15px 25px;
+    padding: 10px 35px;
     display: block;
     color: #2c2c2c;
     text-decoration: none;

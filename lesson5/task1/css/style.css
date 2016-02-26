@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneuecyr-bold-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-bold-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-bold-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-bold-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-bold-webfont.svg#helveticaneuecyrbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-light-webfont.svg#helveticaneuecyrlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background: fixed url("../img/background.jpg") #b4cbd1 no-repeat center center;
+    background-size: cover;
+    font: 14px 'Helvetica Neue', Tahoma, sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+input,
+button {
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+
+input:focus,
+input:active,
+button:active,
+button:focus {
+    outline: none;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #074f8d;
+}
+
+.header-menu ul {
+    float: right;
+}
+
+.header-menu ul li {
+    float: left;
+    padding: 10px 14px;
+}
+
+.header-menu a {
+    color: #60b5ed;
+    text-decoration: none;
+}
+
+.header-menu li:hover {
+    /*font-weight: bold;*/
+    background-color: #4eabda;
+}
+
+.header-menu li:hover a {
+    color: #fff;
+}
+
+.user-block {
+    border-left: 1px solid #56a2dc;
+}
+
+.user-block a {
+    padding-left: 30px;
+    padding-bottom: 10px; /* fix flag vissible */
+    color: #fff;
+    font-weight: bold;
+    background: url("../img/flag.png") no-repeat;
+}
+
+.login-block {
+    color: #fff;
+    background-color: #2e7ac4;
+    /*border: 1px solid #4b9dd6;*/
+}
+
+.login-block a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* MAIN */
+
+.form-wrapper {
+    
+    /*centering block*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -287px 0 0 -280px;
+
+    width: 560px;
+    color: #cccccc;
+    background-color: rgba(0,0,0, 0.63);
+    text-align: center;
+}
+
+.form-title {
+    padding: 16px;
+    font-size: 24px;
+    border-bottom: 2px solid #bcc4b5;
+}
+
+.form-body {
+    margin: 37px 142px 0 142px;
+}
+
+
+/*fb-login button*/
+.fb-login {
+    width: 100%;
+    padding: 8px 15px;
+    color: #fff;
+    background: linear-gradient(#3b5699, #304272);
+    border: none;
+    border-top: 1px solid #7789b7;
+    border-radius: 4px;
+    position: relative;
+    font-size: 16px;
+}
+
+.fb-login:before {
+    content: "";
+    background: url("../img/facebook.png") no-repeat center center;
+    position: absolute;
+    width: 33px;
+    height: 32px;
+    left: 4px;
+    top: 0;
+    border-right: 1px solid #213c71;
+    box-shadow: 1px 0 #4c64a2;
+}
+
+.fb-login:after {
+    content: "";
+    background: url("../img/chevron-right.png") no-repeat center center;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    top: 0;
+}
+
+
+.fb-login strong {
+    font-weight: bold;
+}
+
+/*button pressed effect*/
+.fb-login:active {
+    background: linear-gradient(#304272, #3b5699);
+}
+
+
+/*OU divider*/
+
+.divider {
+    margin: 29px 0;
+    position: relative;
+}
+
+.divider:before,
+.divider:after {
+    content: '';
+    position: absolute;
+    width: 42%;
+    top: 8px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #000;
+}
+
+.divider:before {
+    left: 0;
+}
+
+.divider:after {
+    right: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 16px;
+    padding: 10px 15px;
+    width: 100%;
+    color: #fff;
+    background-color: #0e0e0e;
+    border: none;
+    border-bottom: 1px solid #484847;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    background-color: #1b5288;
+    border-bottom: 1px solid #6698c7;
+    box-shadow: 0 0 8px 4px rgba(47, 123, 197, 0.77),
+                inset 0 2px 6px 4px rgba(0, 0, 0, 0.2),
+                inset 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-block {
+    text-align: left;
+}
+
+input[type="submit"] {
+    margin-top: 22px;
+    padding: 10px 18px;
+    color: #fff;
+    background: linear-gradient(#64a8e3, #2e7ac4);
+    border: 1px solid #4299d2;
+    border-radius: 4px;
+}
+
+/*button pressed effect*/
+input[type="submit"]:active {
+    background: linear-gradient(#2e7ac4, #64a8e3);
+}
+
+.form-footer {
+    font-size: 11px;
+    padding: 19px;
+}

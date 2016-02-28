@@ -30,6 +30,11 @@ body {
     font: 14px 'Helvetica Neue', Tahoma, sans-serif;
 }
 
+.wrapper {
+    width: 1215px;
+    margin: 0 auto;
+}
+
 .clearfix:after {
     content: "";
     clear: both;
@@ -108,13 +113,7 @@ header {
 /* MAIN */
 
 .form-wrapper {
-    
-    /*centering block*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -287px 0 0 -280px;
-
+    margin: 100px auto;
     width: 560px;
     color: #cccccc;
     background-color: rgba(0,0,0, 0.63);
@@ -143,6 +142,7 @@ header {
     border-radius: 4px;
     position: relative;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .fb-login:before {
@@ -236,6 +236,7 @@ input[type="submit"] {
     background: linear-gradient(#64a8e3, #2e7ac4);
     border: 1px solid #4299d2;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 /*button pressed effect*/

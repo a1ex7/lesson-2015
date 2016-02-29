@@ -25,14 +25,18 @@
 }
 
 body {
-    background: fixed url("../img/background.jpg") #b4cbd1 no-repeat center center;
-    background-size: cover;
     font: 14px 'Helvetica Neue', Tahoma, sans-serif;
 }
 
-.wrapper {
+.wrapper-header {
     width: 1215px;
     margin: 0 auto;
+}
+
+.wrapper-main {
+    margin: 0 auto;
+    padding: 200px 0;
+    background: #93BCCE url("../img/background.jpg") no-repeat center center;
 }
 
 .clearfix:after {
@@ -113,7 +117,7 @@ header {
 /* MAIN */
 
 .form-wrapper {
-    margin: 100px auto;
+    margin: 0 auto;
     width: 560px;
     color: #cccccc;
     background-color: rgba(0,0,0, 0.63);

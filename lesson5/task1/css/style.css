@@ -26,17 +26,29 @@
 
 body {
     font: 14px 'Helvetica Neue', Tahoma, sans-serif;
+    background-color: #93BCCE;
 }
 
-.wrapper-header {
+/*.wrapper-header {
+    max-width: 1215px;
+    margin: 0 auto;
+}*/
+
+header {
     max-width: 1215px;
     margin: 0 auto;
 }
 
-.wrapper-main {
+/*.wrapper-main {
     margin: 0 auto;
     padding: 200px 0;
     background: #93BCCE url("../img/background.jpg") no-repeat center center;
+}
+*/
+main.main-content {
+    margin: 0 auto;
+    padding: 200px 0;
+    background: url("../img/background.jpg") no-repeat center center;
 }
 
 .clearfix:after {

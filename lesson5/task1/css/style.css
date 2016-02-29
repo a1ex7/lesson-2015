@@ -29,7 +29,7 @@ body {
 }
 
 .wrapper-header {
-    width: 1215px;
+    max-width: 1215px;
     margin: 0 auto;
 }
 

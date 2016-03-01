@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px 'Open Sans', Tahoma, sans-serif;
+    color: #fff;
+    background: url("../img/background.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+
+.main-head {
+    padding: 70px 0 170px 0;
+}
+
+.nav {
+    line-height: 48px;
+}
+
+.nav__logo {
+    float: left;
+    font: 48px/48px "League Gothic", Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nav__link {
+    color: #fff;
+}
+
+.nav__link span{
+    color: #3D2C45;
+}
+
+.menu {
+    float: right;
+}
+
+.menu__item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.menu__link {
+    color: #fff;
+    font: 24px 'League Gothic', Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.menu__link--active,
+.menu__link:hover {
+    border-bottom: 2px solid #edbfff;
+}
+
+.slider {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slider__block {
+
+}
+
+.slider__block--left {
+    float: left;
+    width: 50%
+}
+
+
+.slider__title {
+    font-family: 'League Gothic', Tahoma, sans-serif;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    font-size: 60px;
+    color: #fefefe;
+}
+
+.slider__title--small {
+    font-size: 32px;
+    color: #edbfff;
+    text-transform: uppercase;
+}
+
+
+.slider__text {
+    font-size: 18px;
+}
+
+.slider__block--right {
+    float: right;
+    width: 50%
+}
+
+.about {
+    padding: 70px 0;
+    background-color: #553c60;
+    background-image: linear-gradient(#745083, #322539);
+}
+
+.about__block {
+    float: left;
+    width: 30%;
+    padding: 0 0 0 47px;
+}
+
+.about__block:not(:last-child) {
+    margin-right: 5%;
+}
+
+.about__title {
+    position: relative;
+}
+
+.about__title:before {
+    content: '';
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    left: -52px;
+    top: 8px;
+    background: url('../img/sprite.png');
+}
+
+.about__title {
+    font: 30px 'League Gothic';
+    text-shadow: 1px 1px 0 #0f1518;
+    text-transform: uppercase;
+}
+
+.about__text {
+    padding: 1em 0;
+    text-shadow: 1px 1px 0 #0f1518;
+}
+
+.about__readmore-link {
+    float: right;
+    margin-right: 0.5em;
+    color: #fff;
+    font: 18px 'League Gothic';
+    text-shadow: 1px 1px 0 #0f1518;
+    text-transform: uppercase;
+}
+
+.about__readmore-link:hover {
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+}
+
+.info {
+    background-color: #f9f9f9;
+}
+
+.starts {
+    float: left;
+    width: 45%;
+}
+
+.updates {
+    float: left;
+    width: 55%;
+}
+
+.brands {
+    background-color: #f9f9f9;
+}
+
+.recent {
+    background-color: #ececec;
+}
+
+.recent__block {
+    float: left;
+    width: 33%;
+}
+
+.main-footer {
+    background: url("../img/bg-bottom.jpg") no-repeat;
+}
+
+/*MAIN*/
+
+/*FOOTER*/
+
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    .about__block {
+        float: none;
+        width: 100%;
+    }
+
+}

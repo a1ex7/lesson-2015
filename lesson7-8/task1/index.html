@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Pingbuller - Lesson 6</title>
   <link rel="stylesheet" href="css/reset.css">
+  <!-- <link rel="stylesheet" href="css/debug.css"> -->
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -78,12 +79,14 @@
   <section class="info">
     <div class="inner clearfix">
       <section class="starts">
-        <h2 class="starts__title">
-          PingbulLer starts here
-        </h2>
-        <p class="starts__text">
-          “Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”
-        </p>
+        <div class="starts__block">
+          <h2 class="starts__title">
+            PingbulLer <span>starts here</span>
+          </h2>
+          <p class="starts__text">
+            “Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”
+          </p>
+        </div>
         <div class="starts__points">
           <div class="points__block">
             <a href="#" class="points__link points__link--inverse"></a>
@@ -108,7 +111,7 @@
             <p class="updates__posted">Posted by Admin on March 13 2012 in Recent News</p>
           </li>
         </ul>
-        <p class="updates__readmore">Read more here</p>
+        <a href="#" class="updates__readmore">Read more here</a>
       </section>
     </div>
   </section>
@@ -176,7 +179,7 @@
       </nav>
       <div class="main-footer__designed">
         <p>
-          Designed by <span>Pingbull AS</span>
+          Designed by <strong>Pingbull AS</strong>
         </p>
       </div>
     </div>

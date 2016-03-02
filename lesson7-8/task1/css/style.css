@@ -91,10 +91,29 @@ a {
 
 .slider {
     background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 168px;
+    position: relative;
 }
 
-.slider__block {
+.slider:before,
+.slider:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 42px;
+    cursor: pointer;
+}
 
+.slider:before {
+    left: 5%;
+    background: url("../img/shevron-left.png") no-repeat center center;
+}
+
+.slider:after {
+    right: 5%;
+    background: url("../img/shevron-right.png") no-repeat center center;
 }
 
 .slider__block--left {
@@ -238,6 +257,9 @@ a {
 }
 
 .info {
+    padding-bottom: 70px;
+    border-top: 1px solid #f9f9f9;
+    border-bottom: 1px solid #e6e6e6;
     background-color: #f9f9f9;
 }
 
@@ -246,12 +268,108 @@ a {
     width: 45%;
 }
 
+.starts__block {
+    position: relative;
+    margin: 25px;
+    padding: 34px 35px 34px 38px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.starts__block:before {
+    content: '';
+    position: absolute;
+    left: -23px;
+    top: 26px;
+    width: 49px;
+    height: 49px;
+    background: url("../img/user-photo.png") no-repeat center center;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.3),
+                2px 2px 0 #fff;    
+}
+
+.starts__block:after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 40px;
+    bottom: -9px;
+    background-color: #fff;
+    /*box-shadow: 0 1px 2px rgba(0,0,0,0.05);*/
+    transform: skewY(45deg);
+}
+
+.starts__title,
+.updates__title {
+    margin-bottom: 15px;
+    font: 30px 'League Gothic';
+    color: #454545;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+.starts__title span {
+    color: #edbfff;
+}
+
+.starts__text,
+.updates__list {
+    text-shadow: 1px 1px 0px #fff;
+    color: #454545;
+}
+
 .updates {
     float: left;
     width: 55%;
+    padding-left: 25px;
+    padding-top: 59px;
+}
+
+.updates__list {
+    margin-left: 65px;
+}
+
+.updates__item {
+    position: relative;
+}
+
+
+.updates__item:before {
+    content: '';
+    position: absolute;
+    left: -67px;
+    top: -3px;
+    width: 57px;
+    height: 57px;
+    background-image: url("../img/updates-bg.jpg");
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+}
+
+.updates__link {
+    color: inherit;
+    font-weight: bold;
+}
+
+.updates__posted {
+    margin-bottom: 25px;
+}
+
+.updates__readmore {
+    display: block;
+    font: 18px 'League Gothic';
+    color: #454545;
+    text-transform: uppercase;
+    text-align: right;
+    text-shadow: 1px 1px 0px #fff;
 }
 
 .brands {
+    border-top: 1px solid #fefefe;
+    border-bottom: 1px solid #fefefe;
     background-color: #f9f9f9;
 }
 
@@ -266,14 +384,44 @@ a {
 
 
 .recent {
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #fefefe;
+    padding: 75px 0 75px 0;
     background-color: #ececec;
 }
 
 .recent__block {
     float: left;
     width: 33%;
+    padding: 25px;
+    text-shadow: 1px 1px 0px #fff;
 }
 
+.recent__title {
+    margin-bottom: 0.5em;
+    font: 30px 'League Gothic';
+    color: #454545;
+    text-transform: uppercase;
+}
+
+.recent__title span {
+    color: #b9b9b9;
+}
+
+.recent__title--big {
+    font-size: 48px;
+}
+
+.recent__copyright {
+    margin-bottom: 15px;
+    color: #c5c5c5;
+    font: 16px Georgia, Arial, sans-serif;
+    font-style: italic;
+}
+
+.recent__text {
+    color: #787878;
+}
 
 /*FOOTER*/
 
@@ -289,6 +437,10 @@ a {
 
 .main-footer__designed {
     float: right;
+}
+
+.main-footer__designed strong {
+    font-weight: bold;
 }
 
 

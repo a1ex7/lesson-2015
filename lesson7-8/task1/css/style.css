@@ -32,7 +32,7 @@ a {
 /*HEADER*/
 
 .main-head {
-    padding: 70px 0 170px 0;
+    padding: 70px 0 164px 0;
 }
 
 .nav {
@@ -64,7 +64,7 @@ a {
 }
 
 .menu__item {
-    margin-left: 50px;
+    margin-left: 47px;
 }
 
 .menu--footer__item {
@@ -118,15 +118,14 @@ a {
 
 .slider__block--left {
     float: left;
-    width: 50%;
-    margin-top: 80px;
+    width: 54%;
+    margin: 86px 3px 0 2px;
 }
 
 
 .slider__title {
-    font-family: 'League Gothic', Tahoma, sans-serif;
+    font: 60px/45px 'League Gothic', Tahoma, sans-serif;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    font-size: 60px;
     color: #fefefe;
 }
 
@@ -143,11 +142,29 @@ a {
 
 .slider__block--right {
     float: right;
-    width: 50%
+    width: 45%;
+    position: relative;
 }
+
+.slider__image {
+    text-align: center;
+    margin-top: -18px;
+    margin-bottom: -21px;
+    padding-left: 20px;
+}
+
+.slider__points {
+    position: absolute;
+    left: 43%;
+    top: 123%;
+}
+
 
 .points__block {
     text-align: center;
+    /*margin-top: -20px;*/
+    vertical-align: middle;
+    padding-right: 5px;
 }
 
 .points__link {
@@ -155,7 +172,7 @@ a {
     position: relative;
     width: 16px;
     height: 16px;
-    margin-left: 3px;
+    margin-left: 2px;
     background-color: rgba(0,0,0,0.3);
     border-radius: 50%;
 }
@@ -194,7 +211,7 @@ a {
 /*MAIN*/
 
 .about {
-    padding: 70px 0;
+    padding: 74px 0px 68px 0px;
     background-color: #553c60;
     background-image: linear-gradient(#745083, #322539);
 }
@@ -202,7 +219,7 @@ a {
 .about__block {
     float: left;
     width: 30%;
-    padding: 0 0 0 47px;
+    padding: 0 0 0 65px;
 }
 
 .about__block:not(:last-child) {
@@ -229,8 +246,8 @@ a {
     width: 31px;
     height: 31px;
     position: absolute;
-    left: -52px;
-    top: 8px;
+    left: -55px;
+    top: 9px;
     background: url('../img/sprite.png');
 }
 
@@ -239,12 +256,15 @@ a {
 }
 
 .about__text {
-    padding: 1em 0;
+    padding: 0.4em 0;
     text-shadow: 1px 1px 0 #0f1518;
+    line-height: 1.5;
+    letter-spacing: -0.40px;
 }
 
 .about__readmore-link {
     float: right;
+    margin-top: 0.5em;
     margin-right: 0.5em;
     color: #fff;
     font: 18px 'League Gothic';
@@ -257,7 +277,8 @@ a {
 }
 
 .info {
-    padding-bottom: 70px;
+    padding-top: 75px;
+    padding-bottom: 68px;
     border-top: 1px solid #f9f9f9;
     border-bottom: 1px solid #e6e6e6;
     background-color: #f9f9f9;
@@ -265,13 +286,13 @@ a {
 
 .starts {
     float: left;
-    width: 45%;
+    width: 50%;
 }
 
 .starts__block {
     position: relative;
     margin: 25px;
-    padding: 34px 35px 34px 38px;
+    padding: 25px 34px 34px 39px;
     background-color: #fff;
     box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
@@ -279,8 +300,8 @@ a {
 .starts__block:before {
     content: '';
     position: absolute;
-    left: -23px;
-    top: 26px;
+    left: -24px;
+    top: 17px;
     width: 49px;
     height: 49px;
     background: url("../img/user-photo.png") no-repeat center center;
@@ -304,7 +325,7 @@ a {
 
 .starts__title,
 .updates__title {
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     font: 30px 'League Gothic';
     color: #454545;
     text-transform: uppercase;
@@ -319,17 +340,20 @@ a {
 .updates__list {
     text-shadow: 1px 1px 0px #fff;
     color: #454545;
+    line-height: 24px;
+    letter-spacing: -0.4px;
 }
 
 .updates {
     float: left;
-    width: 55%;
-    padding-left: 25px;
-    padding-top: 59px;
+    width: 50%;
+    padding-left: 31px;
+    padding-top: 50px;
 }
 
 .updates__list {
-    margin-left: 65px;
+    margin-top: 13px;
+    margin-left: 67px;
 }
 
 .updates__item {
@@ -340,10 +364,10 @@ a {
 .updates__item:before {
     content: '';
     position: absolute;
-    left: -67px;
-    top: -3px;
-    width: 57px;
-    height: 57px;
+    left: -66px;
+    top: -1px;
+    width: 49px;
+    height: 49px;
     background-image: url("../img/updates-bg.jpg");
     border-radius: 50%;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
@@ -355,7 +379,7 @@ a {
 }
 
 .updates__posted {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 
 .updates__readmore {
@@ -364,6 +388,8 @@ a {
     color: #454545;
     text-transform: uppercase;
     text-align: right;
+    margin-right: 20px;
+    padding-top: 2px;
     text-shadow: 1px 1px 0px #fff;
 }
 
@@ -374,7 +400,7 @@ a {
 }
 
 .brands__list {
-    padding: 3% 9%;
+    padding: 2.5% 9%;
 }
 
 .brands__item {
@@ -386,15 +412,18 @@ a {
 .recent {
     border-top: 1px solid #d8d8d8;
     border-bottom: 1px solid #fefefe;
-    padding: 75px 0 75px 0;
+    padding: 89px 0 58px 0;
     background-color: #ececec;
 }
 
 .recent__block {
     float: left;
-    width: 33%;
-    padding: 25px;
+    width: 30%;
     text-shadow: 1px 1px 0px #fff;
+}
+
+.recent__block:not(:last-child) {
+    margin-right: 5%;
 }
 
 .recent__title {
@@ -432,11 +461,13 @@ a {
 
 .main-footer {
     background: url("../img/bg-bottom.jpg") no-repeat center top;
-    padding: 40px 0 50px 0;
+    padding: 44px 0 50px 0;
 }
 
 .main-footer__designed {
     float: right;
+    font-size: 11px;
+    line-height: 32px;
 }
 
 .main-footer__designed strong {

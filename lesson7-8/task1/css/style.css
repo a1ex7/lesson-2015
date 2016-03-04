@@ -4,6 +4,7 @@
 
 body {
     font: 16px 'Open Sans', Tahoma, sans-serif;
+    word-wrap: break-word;
     color: #fff;
     background: url("../img/background.jpg") no-repeat center top;
     /*background-size: cover;*/
@@ -58,12 +59,16 @@ a {
     float: right;
 }
 
+.menu--single {
+    display: none;
+}
+
 .menu--footer {
     float: left;
     line-height: 20px;
 }
 
-.menu__item {
+.menu__item:not(:first-child) {
     margin-left: 47px;
 }
 
@@ -478,26 +483,157 @@ a {
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
+    
+    .inner {
+        padding: 0 20px;
+    }
+    
+    .nav__logo,
+    .menu {
+        float: none;
+    }
+    
+    .nav__logo {
+        margin: 65px 0 30px 0;
+    }
+    
+    .menu {
+        margin-bottom: 70px;
+    }
+    
+    .slider:before {
+        left: 0;
+    }
+
+    .slider:after {
+        right: 0;
+    }
+
+    .slider__block--left {
+        width: 45%;
+        margin: 86px 20px 0 20px;
+    }
+    
+    .slider__title {
+        font-size: 48px;
+    }
+
+    .slider__title--small {
+        font-size: 24px;
+    }
+
+    .slider__points {
+        top: 110%;
+    }
+
+    .about__title {
+        font-size: 24px;
+    }
 
     .brands__list {
         padding: 3% 0;
     }
 
+    .slider__text {
+        font-size: 16px;
+    }
+
+    .starts__title {
+        font-size: 24px;
+    }
+
+    .starts__title span {
+        display: block;
+    }
+        
     .brands__item {
         width: 16.6%;
+    }
+
+    .recent__title {
+        font-size: 24px;
+    }
+
+    .recent__copyright {
+        display: none;
+    }
+
+    .main-footer {
+        background-size: cover;
+    }
+
+    .menu--footer {
+        margin-bottom: 0;
+    }
+
+    .menu--footer__item {
+        margin: 0;
+        margin-left: 47px; 
     }
 
 }
 
 @media (max-width: 480px) {
 
+    .menu--top {
+        display: none;
+    }
+
+    .menu--single {
+        display: block;
+    }
+
+    .slider__title {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .slider__title--small {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .slider__text {
+        display: none;
+    }
+
+    .slider__image {
+        padding-left: 0; 
+    }
+
     .about__block {
         float: none;
         width: 100%;
     }
 
+    .starts,
+    .updates {
+        width: 100%;
+    }
+
     .brands__item {
         width: 33%;
+    }
+
+    .recent__block {
+        width: 100%;
+    }
+
+    .nav--bottom,
+    .main-footer__designed {
+        float: none;
+    }
+    
+    .menu--footer .menu--footer__item {
+        margin: 0;
+    }
+
+    .menu--footer__item:not(:last-child) {
+        margin-right: 15px; 
+    }
+
+    .main-footer__designed {
+        text-align: center;
     }
 
 }

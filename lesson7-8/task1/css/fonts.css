@@ -11,17 +11,14 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'Open Sans';
-    src: url('opensans-light-webfont.eot');
-    src: url('opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('opensans-light-webfont.woff2') format('woff2'),
-         url('opensans-light-webfont.woff') format('woff'),
-         url('opensans-light-webfont.ttf') format('truetype'),
-         url('opensans-light-webfont.svg#open_sanslight') format('svg');
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -29,11 +26,11 @@
 
 @font-face {
     font-family: 'League Gothic';
-    src: url('leaguegothic-regular-webfont.eot');
-    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('leaguegothic-regular-webfont.woff') format('woff'),
-         url('leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
     font-weight: normal;
     font-style: normal;
 

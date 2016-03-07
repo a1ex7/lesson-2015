@@ -91,7 +91,7 @@ a {
 }
 
 .menu__item:not(:first-child) {
-    margin-left: 47px;
+    margin-left: 4%;
 }
 
 .menu--popup__item {
@@ -146,7 +146,7 @@ a {
     content: '';
     display: inline-block;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 30px;
     height: 42px;
     cursor: pointer;
@@ -155,11 +155,13 @@ a {
 .slider:before {
     left: 5%;
     background: url("../img/shevron-left.png") no-repeat center center;
+    background-size: 100%;
 }
 
 .slider:after {
     right: 5%;
     background: url("../img/shevron-right.png") no-repeat center center;
+    background-size: 100%;
 }
 
 .slider__block--left {
@@ -206,7 +208,7 @@ a {
     border: 5px solid #46324f;
     border-radius: 50%;
     position: absolute;
-    left: 53%;
+    left: 45%;
     top: 34%;
 }
 
@@ -518,7 +520,7 @@ a {
 .recent {
     border-top: 1px solid #d8d8d8;
     border-bottom: 1px solid #fefefe;
-    padding: 89px 0 58px 0;
+    padding: 10% 0 10% 0;
     background-color: #ececec;
 }
 
@@ -583,7 +585,7 @@ a {
 
 /* RESPONSIVE */
 
-@media (max-width: 768px) {
+@media (max-width: 959px) {
     
     .inner {
         padding: 0 20px;
@@ -633,6 +635,7 @@ a {
 
     .brands__list {
         padding: 3% 0;
+        text-align: center;
     }
 
     .slider__text {
@@ -676,6 +679,10 @@ a {
 
 @media (max-width: 480px) {
 
+    .nav__logo {
+        text-align: center;
+    }
+
     .menu--top {
         display: none;
     }
@@ -687,6 +694,10 @@ a {
     
     .menu--single:hover .menu--popup {
         display: block;
+    }
+
+    .slider:before, .slider:after {
+        width: 22px;
     }
 
     .slider__title {
@@ -710,6 +721,43 @@ a {
     .about__block {
         float: none;
         width: 100%;
+        position: relative;
+    }
+    
+    .slider {
+        margin-bottom: 95px;
+    }
+
+    .slider__block--left {
+        width: 55%;
+        margin: 19% 3% 19% 3%;
+    }
+
+     .slider__block--right {
+        width: 39%;
+        position: static;
+    }
+    
+    .slider__image {
+        margin-top: -8px;
+        margin-bottom: -47px;
+    }
+
+    .play-btn {
+        left: unset;
+        right: 10%;
+    }
+
+    .slider__image img {
+        width: 100%;
+    }
+    
+    .slider__points {
+        /*right: 40%;*/
+    }
+
+    .about__block {
+        margin-bottom: 4%;
     }
 
     .starts,
@@ -723,6 +771,19 @@ a {
 
     .recent__block {
         width: 100%;
+    }
+    
+    .recent__block:not(:last-child) {
+        margin-right: unset;
+        margin-bottom: 10%;
+    }
+
+    .updates {
+        padding: 30px 48px 0 60px;
+    }
+
+    .updates__readmore {
+        margin-right: -10px;
     }
 
     .nav--bottom,
@@ -740,6 +801,38 @@ a {
 
     .main-footer__designed {
         text-align: center;
+    }
+
+}
+
+
+
+@media (max-width: 320px) {
+
+    .slider__block--left {
+        width: auto; 
+        text-align: center;
+    }
+
+    .slider__block--right {
+        display: none;
+    }
+
+    .updates {
+        padding: 0;
+        padding-top: 45px; 
+    }
+
+    .brands__item {
+        width: 50%;
+    }
+
+    .recent {
+        display: none;
+    }
+
+    .nav--bottom {
+        display: none;
     }
 
 }

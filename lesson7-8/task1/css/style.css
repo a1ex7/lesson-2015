@@ -78,7 +78,7 @@ a {
     width: 240px;
     left: 50%;
     margin-left: -120px;
-    top: 39%;
+    top: 36%;
 }
 
 .menu--single {
@@ -150,18 +150,25 @@ a {
     width: 30px;
     height: 42px;
     cursor: pointer;
+    background: url("../img/sprite2.png") no-repeat center center;
 }
 
 .slider:before {
     left: 5%;
-    background: url("../img/shevron-left.png") no-repeat center center;
-    background-size: 100%;
+    background-position: 0 0;
 }
 
 .slider:after {
     right: 5%;
-    background: url("../img/shevron-right.png") no-repeat center center;
-    background-size: 100%;
+    background-position: -30px 0;  
+}
+
+.slider:before:hover {
+    background-position: 0 -42px;
+}
+
+.slider:after:hover {
+    background-position: -30px -42px;  
 }
 
 .slider__block--left {
@@ -208,8 +215,8 @@ a {
     border: 5px solid #46324f;
     border-radius: 50%;
     position: absolute;
-    left: 45%;
-    top: 34%;
+    left: 53%;
+    top: 36%;
 }
 
 .play-btn:hover {
@@ -507,13 +514,20 @@ a {
     background-color: #f9f9f9;
 }
 
+.brands__link {
+    display: block;
+}
+
 .brands__list {
-    padding: 2.5% 9%;
+    text-align: center;
+    padding: 17px 0 33px 0;
 }
 
 .brands__item {
-    float: left;
-    width: 16%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 14%;
+    margin: 34px 5px 21px 3px;
 }
 
 
@@ -585,7 +599,25 @@ a {
 
 /* RESPONSIVE */
 
-@media (max-width: 959px) {
+@media (max-width: 1150px) {
+    .inner {
+        padding: 0 20px;
+    }
+
+    .slider:before {
+        left: 0;
+    }
+
+    .slider:after {
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-head {
+        padding: 0;
+    }
     
     .inner {
         padding: 0 20px;
@@ -625,17 +657,16 @@ a {
         font-size: 24px;
     }
 
+    .play-btn {
+        left: 55%;
+    }
+
     .slider__points {
         top: 110%;
     }
 
     .about__title {
         font-size: 24px;
-    }
-
-    .brands__list {
-        padding: 3% 0;
-        text-align: center;
     }
 
     .slider__text {
@@ -651,7 +682,7 @@ a {
     }
         
     .brands__item {
-        width: 16.6%;
+        width: 14%;
     }
 
     .recent__title {
@@ -694,10 +725,6 @@ a {
     
     .menu--single:hover .menu--popup {
         display: block;
-    }
-
-    .slider:before, .slider:after {
-        width: 22px;
     }
 
     .slider__title {
@@ -766,7 +793,7 @@ a {
     }
 
     .brands__item {
-        width: 33%;
+        width: 28%;
     }
 
     .recent__block {
@@ -809,22 +836,82 @@ a {
 
 @media (max-width: 320px) {
 
+    .inner {
+        padding: 0px 10px;
+    }
+
+    .nav__logo {
+        margin: 65px 0 22px 0;
+    }
+
+    .slider {
+        background-color: transparent;
+        margin-bottom: 130px;
+    }
+
+    .slider:before, .slider:after {
+        top: 8%;
+    }
+
     .slider__block--left {
+        float: none;
         width: auto; 
         text-align: center;
+        margin: 16% 8% 12% 4%;
     }
 
     .slider__block--right {
         display: none;
+    }
+    
+    .about {
+        padding: 68px 0px 43px 0px;
+    }
+
+    .about__block {
+        margin-bottom: 7%;
+    }
+
+    .about__text {
+        padding: 0.1em 0;
+    }
+
+    .about__readmore-link {
+        margin-top: 0.7em;
+    }
+
+    .info {
+        padding-top: 40px;
+        padding-bottom: 85px;
+    }
+
+    .starts__block {
+        margin-right: 4px;
+        padding: 22px 16px 27px 34px;
+    }
+
+    .starts__title {
+        margin-bottom: -2px;
     }
 
     .updates {
         padding: 0;
         padding-top: 45px; 
     }
+    
+    .updates__readmore { 
+        margin: 0;
+        padding: 0;
+        margin-right: 8px;
+    }
+
+    .brands__list {
+        
+    }
+
 
     .brands__item {
-        width: 50%;
+        width: 40%;
     }
 
     .recent {
@@ -833,6 +920,10 @@ a {
 
     .nav--bottom {
         display: none;
+    }
+
+    .main-footer {
+        padding: 32px 0 32px 0;
     }
 
 }

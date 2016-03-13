@@ -925,7 +925,7 @@ a {
     }
 
     .menu--popup {
-        top: 36%;
+        top: 52%;
     }
 
     .nav__logo {
@@ -945,7 +945,7 @@ a {
         float: none;
         width: auto; 
         text-align: center;
-        margin: 16% 8% 12% 4%;
+        margin: 36% 8% 12% 4%;
     }
 
     .slider__block--right {
@@ -958,6 +958,7 @@ a {
 
     .about__block {
         margin-bottom: 7%;
+        padding: 0px 0px 0 64px;
     }
 
     .about__text {
@@ -969,22 +970,27 @@ a {
     }
 
     .info {
-        padding-top: 40px;
+        padding-top: 70px;
         padding-bottom: 85px;
     }
 
     .starts__block {
-        margin-right: 4px;
+        margin: 0px 1px 25px 26px;
         padding: 22px 16px 27px 34px;
     }
 
     .starts__title {
         margin-bottom: -2px;
+        font-size: 24px;
+    }
+
+    .starts__title span {
+        display: block;
     }
 
     .updates {
         padding: 0;
-        padding-top: 45px; 
+        padding-top: 39px; 
     }
     
     .updates__readmore { 
@@ -994,7 +1000,7 @@ a {
     }
 
     .brands__list {
-        
+        padding: 28px 0 43px 0;
     }
 
 
@@ -1011,7 +1017,7 @@ a {
     }
 
     .main-footer {
-        padding: 32px 0 32px 0;
+        padding: 7px 0 31px 0;
     }
 
 }

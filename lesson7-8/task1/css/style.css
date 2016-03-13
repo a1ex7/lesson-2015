@@ -54,6 +54,18 @@ a {
 
 .nav__link {
     color: #fff;
+    position: relative;
+}
+
+.nav__link:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 16px;
+    top: -3px;
+    background: url('../img/star.png') no-repeat center center;
 }
 
 .nav__link span{
@@ -690,7 +702,7 @@ a {
     }
 
      .slider__image img {
-        width: 100%;
+        width: 91%;
     }
 
     .starts__title {
@@ -764,6 +776,10 @@ a {
 
     .slider__image {
         padding-left: 0; 
+    }
+
+    .slider__image img {
+        width: 100%;
     }
 
     .slider__points {

@@ -55,27 +55,51 @@ body {
 }
 
 .testimonial__photo {
-    width: 100%;
+    margin-left: -4px;
 }
 
 .testimonial__block {
-    padding: 15px;
+    min-height: 100px;
+    position: relative;
+    padding: 10px 15px;
     margin-left: 25px;
     background-color: #fff;
     display: inline-block;
     width: calc(100% - 100px - 25px - 8px);
 }
 
+.testimonial__block::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: 38px;
+    border: 12px solid transparent;
+    border-right: 18px solid #fff;
+}
+
 .testimonial__title {
+    padding-bottom: 5px;
     border-bottom: 1px dotted #666;
     color: #3070a8;
     font-style: italic;
+    line-height: 24px;
 }
 
 .testimonial__user-name {
     float: left;
 }
 
+.testimonial__user-name::before {
+    content: '- ';
+}
+
 .testimonial__user-position {
     float: right;
+}
+
+.testimonial__text {
+    padding-top: 5px;
+    line-height: 20px;
+    overflow-wrap: break-word;
 }

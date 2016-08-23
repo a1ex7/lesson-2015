@@ -1,7 +1,6 @@
 {
   "name": "goit-lesson-2016",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +11,14 @@
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a1ex7/lesson-2015.git"
+  },
+  "bugs": {
+    "url": "https://github.com/a1ex7/lesson-2015/issues"
+  },
+  "homepage": "https://github.com/a1ex7/lesson-2015#readme",
+  "description": ""
 }
